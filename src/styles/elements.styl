@@ -1,0 +1,100 @@
+.btn
+  heading-4()
+  padding 12px 26px
+  border-radius 10px
+  appearance none
+  border 0
+  font-family inherit
+  background-color transparent
+  transition color 0.3s ease-in-out, background-color 0.3s ease-in-out
+  cursor pointer
+  &:disabled
+    opacity 0.5
+    cursor not-allowed
+  &.primary
+    color brand-white
+    background-color brand-purple
+    &:hover
+      color lighten(brand-white, 10)
+      background-color lighten(brand-purple, 10)
+  &.blue
+    color brand-white
+    background-color brand-blue
+    &:hover
+      color lighten(brand-white, 10)
+      background-color lighten(brand-blue, 10)
+  &.navy
+    color brand-white
+    background-color brand-light-navy
+    &:hover
+      color lighten(brand-white, 10)
+      background-color lighten(brand-light-navy, 10)
+  &.red
+    color brand-white
+    background-color brand-red
+    &:hover
+      color lighten(brand-white, 10)
+      background-color lighten(brand-red, 10)
+  &.link
+    text-decoration none
+    color brand-lighter-navy
+    &:hover
+      text-decoration underline
+
+a.btn
+  text-decoration none
+
+.tag
+  body-3()
+  display inline-block
+  color brand-blue
+  background-color brand-grey
+  padding 6px 16px
+  border-radius 10px
+  cursor pointer
+  user-select none
+  margin 0 8px 14px 0
+  transition color 0.3s ease-in-out, background-color 0.3s ease-in-out
+  &:hover
+    background-color brand-light-blue
+  &.active
+    color brand-white
+    background-color brand-blue
+
+label.label
+  heading-4()
+  display block
+  color brand-light-navy
+  & + span
+    body-4()
+    display block
+    color brand-lighter-navy
+    margin-bottom 16px
+
+
+.input
+  font-family inherit
+  appearance none
+  border 1px solid transparent
+  body-2()
+  padding 13px 24px
+  margin-bottom 16px
+  display block
+  width 100%
+  box-sizing border-box
+  color brand-light-navy
+  background-color brand-light-grey
+  border-radius 5px
+  transition border-color 0.3s ease-in-out
+  &:focus
+    outline none
+    border 1px solid brand-blue
+  &.error
+    border 1px solid brand-red
+
+textarea.input
+  resize none
+
+@media screen and (max-width: 570px)
+  .input
+    padding 12px 16px

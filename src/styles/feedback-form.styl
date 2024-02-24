@@ -1,0 +1,49 @@
+.feedback-form-wrapper
+  width calc(100% - 48px)
+  max-width 540px
+  margin 80px auto
+  .feedback-form
+    background-color brand-white
+    padding 52px 42px 40px
+    border-radius 10px
+    position relative
+    .decoration
+      display inline-block
+      line-height 0
+      position absolute
+      left 42px
+      top -28px
+      width 56px
+      height 56px
+      :global(svg)
+        width 100%
+        height 100%
+    h1
+      heading-1()
+      color brand-light-navy
+      margin-bottom 40px
+    input, textarea
+      margin-bottom 24px
+    .action
+      display flex
+      align-items center
+      justify-content flex-end
+      gap 16px
+      .spacer
+        flex-grow 1
+@media screen and (max-width: 570px)
+  .feedback-form-wrapper
+    margin 24px auto
+    .feedback-form
+      padding 52px 24px 40px
+      .decoration
+        top -20px
+        left 24px
+        width 40px
+        height 40px
+      .action
+        text-align center
+        flex-direction column-reverse
+        align-items stretch
+        .spacer
+          display none
